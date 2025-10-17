@@ -1,0 +1,109 @@
+{
+  "test_session": {
+    "timestamp": "2025-10-17T19:54:58.137295",
+    "test_suite": "WindowManager Comprehensive Test",
+    "version": "1.0",
+    "environment": {
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "win32",
+      "working_directory": "D:\\computer-assitant"
+    }
+  },
+  "tests": [
+    {
+      "test_name": "instantiation",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:58.137295",
+      "details": {
+        "message": "WindowManager created successfully"
+      },
+      "error": null
+    },
+    {
+      "test_name": "initialization",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:58.164967",
+      "details": {
+        "message": "WindowManager initialized successfully"
+      },
+      "error": null
+    },
+    {
+      "test_name": "window_enumeration",
+      "status": "ERROR",
+      "timestamp": "2025-10-17T19:54:58.166969",
+      "details": {},
+      "error": "slice(None, 3, None)"
+    },
+    {
+      "test_name": "monitor_detection",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:58.166969",
+      "details": {
+        "monitor_count": 1,
+        "monitors": [
+          {
+            "index": 1,
+            "width": 1536,
+            "height": 864,
+            "dpi": 96,
+            "is_primary": true
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "test_name": "primary_monitor_detection",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:58.166969",
+      "details": {
+        "width": 1536,
+        "height": 864,
+        "dpi": 96,
+        "device_name": "\\\\.\\DISPLAY1"
+      },
+      "error": null
+    },
+    {
+      "test_name": "window_search",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:58.167971",
+      "details": {
+        "search_term": "explorer",
+        "found_count": 0,
+        "partial_match": true
+      },
+      "error": null
+    },
+    {
+      "test_name": "performance_statistics",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:58.167971",
+      "details": {
+        "total_operations": 0,
+        "total_errors": 0,
+        "windows_enumerated": 4,
+        "windows_manipulated": 0
+      },
+      "error": null
+    },
+    {
+      "test_name": "cleanup",
+      "status": "PASS",
+      "timestamp": "2025-10-17T19:54:59.200103",
+      "details": {
+        "message": "Cleanup completed successfully"
+      },
+      "error": null
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "passed": 7,
+    "failed": 1,
+    "errors": [
+      "window_enumeration: slice(None, 3, None)"
+    ]
+  }
+}
